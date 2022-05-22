@@ -23,23 +23,23 @@ namespace SummatorOfNumbersApp
         [Test]
         public void ValidateSumMethod_SumCorrectlyWithPositiveNumbers()
         {
-            var expected = driver.SumNums("3", "3");
-            Assert.AreEqual(expected, "Sum: 6");
+            var actual = driver.SumNums("3", "3");
+            Assert.AreEqual("Sum: 6", actual);
         }
 
         [Test]
         public void ValidateSumMethod_SumCorrectlyWithNegative()
         {
-            var expected = driver.SumNums("-1", "-1");
-            var actual = "Sum: -2";
+            var actual = driver.SumNums("-1", "-1");
+            var expected = "Sum: -2";
             Assert.AreEqual(expected, actual);
         }
 
         [Test]
         public void ValidateSumMethod_SumCorrectlyWithZero()
         {
-            var expected = driver.SumNums("0", "0");
-            var actual = "Sum: 0";
+            var actual = driver.SumNums("0", "0");
+            var expected = "Sum: 0";
             Assert.AreEqual(expected, actual);
         }
 
