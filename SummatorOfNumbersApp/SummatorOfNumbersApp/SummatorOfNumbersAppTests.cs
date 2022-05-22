@@ -46,8 +46,8 @@ namespace SummatorOfNumbersApp
         [Test]
         public void ValidateSumMethod_SumCorrectlyWithFirstSymbolDigit()
         {
-            var expected = driver.SumNums("1@", "0!!!");
-            var actual = "Sum: 1";
+            var actual = driver.SumNums("1@", "0!!!");
+            var expected = "Sum: 1";
             Assert.AreEqual(expected, actual);
         }
 
